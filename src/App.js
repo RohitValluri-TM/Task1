@@ -1,4 +1,6 @@
 import './App.css';
+import TypesOfFood from './TypesOfFood';
+
 
 const JSX = ()=> {
   return(
@@ -14,37 +16,13 @@ const JSX = ()=> {
   )
 }
 
-const Fruits = () =>{
-  return(
-    <div>
-      <TypesOfFruit/>
-    </div>
-  )
-}
-
-
-const TypesOfFruit = () => {
-  return (
-    <div>
-      <h2>FRUITS:</h2>
-      <ul>
-        <li>Mango</li>
-        <li>Watermelon</li>
-        <li>Apple</li>
-      </ul>
-    </div>
-  );
-};
-
-
-
-const TypesOfFood = () => {
+function App() {
   return (
     <div className="App">
       <JSX/>
-      <Fruits/>
+      <TypesOfFood/>
     </div>
   );
 }
 
-export default TypesOfFood;
+export default App;
