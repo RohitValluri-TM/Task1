@@ -1,25 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const JSX = ()=> {
+  return(
+    <div>
+      <h1>Hello World</h1>
+      <p>Lets render this to the DOM</p>
+      <ul>List
+        <li>JSX1</li>
+        <li>JSX2</li>
+        <li>JSX3</li>
+      </ul>
+    </div>
+  )
+}
+
+const Fruits = () =>{
+  return(
+    <div>
+      <TypesOfFruit/>
+    </div>
+  )
+}
+
+
+const TypesOfFruit = () => {
+  return (
+    <div>
+      <h2>FRUITS:</h2>
+      <ul>
+        <li>Mango</li>
+        <li>Watermelon</li>
+        <li>Apple</li>
+      </ul>
+    </div>
+  );
+};
+
+
+
+const TypesOfFood = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <JSX/>
+      <Fruits/>
     </div>
   );
 }
 
-export default App;
+export default TypesOfFood;
